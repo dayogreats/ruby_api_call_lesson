@@ -119,6 +119,7 @@ Lets open and run the `example_httparty.rb` file in this excercise folder
 
 # Pair practice
 - Find another third-party ruby gem that will serve as alternative to httparty [here](https://rubygems.org) 
+- Use it to make api call
 
 # Links
 - [Stackoverflow](https://stackoverflow.com/questions/16764030/what-is-the-difference-between-rubys-open-uri-and-nethttp-gems)
