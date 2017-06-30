@@ -4,7 +4,7 @@
 
 Title | Length | Tag
 ------------ | ------------- | ------------- 
-Making API calls using ruby | 60 | Ruby foundation
+Making API calls using ruby | 90 | Ruby foundation
 
 # Learning Goals
 -	Whet your appetite on how web API works 
