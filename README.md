@@ -1,13 +1,16 @@
 # MAKING AN API CALL USING RUBY
 
-[layout	title	     length	tags
-page    Flow Control 60     fundamentals, computer science]
+ 
+
+Layout | Ttile | Length
+------------ | ------------- | ------------- 
+Page | Flow Control  | 60
 
 # Learning Goals
 -	Whet your appetite on how web API works 
 -	Know possible ways of making API calls
 -	Using ruby standard libraries: Net/HTTP, URI, OpenURI, JSON
--	Show you how to find a third-party a rubygem that makes API call a breeze
+-	Show you how to find a third-party ruby gem that makes API call a breeze
  
 # Introduction 
 It is a known fact that our world today is now a global village where we are connected to the world like never before. Connectivity is amazing! We can now purchase, post, pin and pick almost anything - anywhere because we are connected together.
@@ -16,9 +19,9 @@ It is a known fact that our world today is now a global village where we are con
 How different devices and applications are connected to each other making it possible for us to book flight / hotel reservations, buy goods on amazon, call Uber’s driver for ride or perhaps enroll for Turing School of Software?
 
 # API, unsung hero of our connected world
-Well `HTTP` is the king of the web services while the unsung hero of our connected world is API today. API is the engine that inspire innovation in our today’s world.  It’s behind scene and we take it for granted. It’s the engine under the hood that makes all the interactivities we all expect and rely upon online every day. 
+Well `HTTP` is the king of the web services while API is the unsung hero of our connected world. API is the engine that inspire innovation in our today’s world.  It’s behind scene and we take it for granted. It’s the engine under the hood that makes all the interactivities we all expect and rely upon online every day. 
 
-# TAKE FOR EXAMPLE
+# Take for example
 We are all used to making Direct Flight Reservation online where we choose departure, destination and dates etc. Then that information is used to search the server the airline database directly for seat availability and cost based on some variables.  
 
 But imagine a third-part travel service (like [Google Flight](https://www.google.com/flights/) ) that aggregates information from many airline servers for booking seat availability, date, cost and then display the response back to user.  It’s API that makes services like travel services possible to exist today. 
@@ -33,28 +36,26 @@ HTTP makes connectivity between web servers possible. Without Http Interaction w
 
 ** [ CLIENT ---<<--- Http Res ---<<--- SERVER ]
 
-# MATERIALS
-At the end of this lesson we will use our ruby knowledge as listed above to build a command line ruby application:
+# Introduction to the materials
+At the end of this lesson we will use our ruby knowledge  to build a command line ruby application:
 - That prompts users to enter a url
 - checks if the uri entered by the user is a valid uri
 - Makes a remote request to an endpoint 
 - Then display a returned json data
 
-
 ### [Demo](http://www.github.com/dayogreats/ruby_api_call)
-I will walk you through the demo codes. 
+We will walk  through the demo codes together.
 
-# Ruby standard kibraries
+# Ruby standard libraries
 + [Open-uri](https://ruby-doc.org/stdlib-2.3.0/libdoc/open-uri/rdoc/OpenURI.html) is an easy-to-use wrapper for Net::HTTP, Net::HTTPS and Net::FTP
 + [Net::HTTP](https://ruby-doc.org/stdlib-2.3.0/libdoc/net/http/rdoc/Net/HTTP.html) provides a rich library which can be used to build HTTP user-agents
 + [URI](https://ruby-doc.org/stdlib-2.3.0/libdoc/uri/rdoc/URI.html) requiring `net/http` will also require ‘uri’ so you don’t need to require it separately
 
-
 In this lesson we will focus on `open-uri` because it makes it possible to open an http, https or ftp URL as though it were a file:
 
-#Introduction to New Material (I do)
+# Example)
 
-** SCRAPING THE WEB WITH OPENURI
+** Scraping the web with `open-uri`
 ```
 open("http://www.ruby-lang.org/") {|f|
   f.each_line {|line| p line}
