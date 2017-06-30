@@ -2,9 +2,9 @@
 
  
 
-Layout | Ttile | Length
+Title | Length | Tag
 ------------ | ------------- | ------------- 
-Page | Flow Control  | 60
+Making API calls using ruby | 60 | Ruby foundation
 
 # Learning Goals
 -	Whet your appetite on how web API works 
@@ -38,7 +38,7 @@ HTTP makes connectivity between web servers possible. Without Http Interaction w
 
 # Introduction to the materials
 At the end of this lesson we will use our ruby knowledge  to build a command line ruby application:
-- That prompts users to enter a url
+- That promtps users to enter a url
 - checks if the uri entered by the user is a valid uri
 - Makes a remote request to an endpoint 
 - Then display a returned json data
@@ -47,15 +47,15 @@ At the end of this lesson we will use our ruby knowledge  to build a command lin
 We will walk  through the demo codes together.
 
 # Ruby standard libraries
+It is important i mention the underlisted:
 + [Open-uri](https://ruby-doc.org/stdlib-2.3.0/libdoc/open-uri/rdoc/OpenURI.html) is an easy-to-use wrapper for Net::HTTP, Net::HTTPS and Net::FTP
 + [Net::HTTP](https://ruby-doc.org/stdlib-2.3.0/libdoc/net/http/rdoc/Net/HTTP.html) provides a rich library which can be used to build HTTP user-agents
 + [URI](https://ruby-doc.org/stdlib-2.3.0/libdoc/uri/rdoc/URI.html) requiring `net/http` will also require ‘uri’ so you don’t need to require it separately
 
-In this lesson we will focus on `open-uri` because it makes it possible to open an http, https or ftp URL as though it were a file:
+But for the sake of this lesson we will focus on `open-uri` only because it makes it possible for us to open an http, https or ftp URL as though it were a file:
 
-# Example)
-
-** Scraping the web with `open-uri`
+# Example
+Scraping the web with `open-uri`
 ```
 open("http://www.ruby-lang.org/") {|f|
   f.each_line {|line| p line}
@@ -76,14 +76,14 @@ open("http://www.ruby-lang.org/en") {|f|
 ```
 
 # Guided Practice (We do)
-- Lets open and run the `you_do.rb` file in this excercise folder 
-- Then change the uri from `http://www.ruby-lang.org/en` to `http://www.turing.io` in file and run the code 
+- Lets open and run the `you_do.rb` file in the excercise folder 
+- Then change the uri in the file from `http://www.ruby-lang.org/en` to `http://www.turing.io` and run the code 
 
 # Third-Party Gem
-- Rubygems [http://www.rubygems.org] is a place to find ruby gems.
+- [Rubygems](http://www.rubygems.org) is a place to find ruby gems.
 
 # Httparty
-Makes http fun again! 
+A popular ruby gem that makes http fun again! 
 
 ** Example 
 ```
@@ -117,8 +117,8 @@ puts stack_exchange.users
 
 Lets open and run the `example_httparty.rb` file in this excercise folder 
 
-# Assignments
-- Find another third-party ruby gem that will serve as alternative to httparty  [here](https://rubygems.org) 
+# Pair practice
+- Find another third-party ruby gem that will serve as alternative to httparty [here](https://rubygems.org) 
 
 # Links
 - [Stackoverflow](https://stackoverflow.com/questions/16764030/what-is-the-difference-between-rubys-open-uri-and-nethttp-gems)
