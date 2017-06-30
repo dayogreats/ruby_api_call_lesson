@@ -122,8 +122,5 @@ Lets open and run the `example_httparty.rb` file in this excercise folder
 
 # Links
 - [Stackoverflow](https://stackoverflow.com/questions/16764030/what-is-the-difference-between-rubys-open-uri-and-nethttp-gems)
-- [Net/Http](https://ruby-doc.org/stdlib-2.3.0/libdoc/net/http/rdoc/Net/HTTP.html)
-- [Open-uri](https://ruby-doc.org/stdlib-2.3.0/libdoc/open-uri/rdoc/OpenURI.html)
-- [Uri](https://ruby-doc.org/stdlib-2.3.0/libdoc/uri/rdoc/URI.html)
-- [HttParty](http://jnunemaker.github.com/httparty)
+
 
